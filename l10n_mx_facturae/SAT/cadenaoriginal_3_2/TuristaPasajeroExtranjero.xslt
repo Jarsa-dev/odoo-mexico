@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:tpe="http://www.sat.gob.mx/TuristaPasajeroExtranjero">
-	<xsl:output method="text" version="1.0" encoding="UTF-8" indent="no"/>
+<?xml version="1.0" ?><xsl:stylesheet version="1.0" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:tpe="http://www.sat.gob.mx/TuristaPasajeroExtranjero" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:output encoding="UTF-8" indent="no" method="text" version="1.0"/>
 	<!-- Manejador de nodos tipo tpe:TuristaPasajeroExtranjero -->
 	<xsl:template match="tpe:TuristaPasajeroExtranjero">
 		<!--Iniciamos el tratamiento de los atributos de tpe:TuristaPasajeroExtranjero-->
