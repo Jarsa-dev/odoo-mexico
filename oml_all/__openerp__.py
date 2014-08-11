@@ -144,7 +144,6 @@
                 "process",
                 "sale_stock",
                 "account_voucher",
-                "crm_partner_assign",
                 "hr_timesheet_invoice",
                 "l10n_hn",
                 "marketing_campaign_crm_demo",
