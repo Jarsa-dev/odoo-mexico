@@ -54,9 +54,8 @@ if len(sys.argv)==2:
         sys.exit('ERROR: File %s was not found!' % sys.argv[1])
 # End Read file.conf
 else:
-    print "Example of path_local:\n\n /home/carlos/instancias/7/addons_all/openerp-mexico-localization-autonomy-v2/l10n_mx_facturae_base/SAT/cadenaoriginal_3_2/"
+    print "Example of path_local:\n\n /home/carlos/instancias/7/addons_all/openerp-mexico-localization70/l10n_mx_facturae/SAT/cadenaoriginal_3_2/"
     path_local = raw_input('\nEnter the address (path_local): ')
-    #~path_local = "/home/carlos/instancias/7/addons_all/openerp-mexico-localization-autonomy-v2-tiempo/l10n_mx_facturae_base/SAT/cadenaoriginal_3_2"
     print "\nExample of URL:\r"
     print "http://www.sat.gob.mx/cfd/3/cadenaoriginal_3_2/cadenaoriginal_3_2.xslt\n"
     print "http://www.sat.gob.mx/sitio_internet/cfd/nomina/nomina11.xsd"
