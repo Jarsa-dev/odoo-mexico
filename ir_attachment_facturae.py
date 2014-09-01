@@ -50,7 +50,10 @@ import pytz
 import time
 from openerp import tools
 import urllib2
-from qrtools import QR
+try:
+    from qrtools import QR
+except:
+    pass
 
 codigos = {
     200 : 'OK',
@@ -173,10 +176,10 @@ class ir_attachment_facturae_mx(osv.Model):
             
             if pac_params_id:
                 file_globals = invoice_obj._get_file_globals(cr, uid, [invoice.id], context=context)
-                fname_cer_no_pem = file_globals['fname_cer']
+                fname_cer_no_pem = file_globals['fname_cer_no_pem']
                 #cerCSD = fname_cer_no_pem and base64.encodestring(open(fname_cer_no_pem, "r").read()) or ''
                 cerCSD = fname_cer_no_pem and base64.b64encode(open(fname_cer_no_pem, "r").read()) or ''
-                fname_key_no_pem = file_globals['fname_key']
+                fname_key_no_pem = file_globals['fname_key_no_pem']
                 #keyCSD = fname_key_no_pem and base64.encodestring(open(fname_key_no_pem, "r").read()) or ''
                 keyCSD = fname_key_no_pem and base64.b64encode(open(fname_key_no_pem, "r").read()) or ''
                 pac_params_brw = pac_params_obj.browse(cr, uid, [pac_params_id], context=context)[0]
@@ -318,11 +321,11 @@ class ir_attachment_facturae_mx(osv.Model):
                                         
                 else:
                     msg += "\nOcurrio un error.\nCodigo: %s\nRespuesta: %s" % (codigo, codigos[codigo])
-                    raise osv.except_osv(_('Warning'), _('There was something wrong processing CFDI file...'))
+                    #raise osv.except_osv(_('Warning'), _('There was something wrong processing CFDI file...\nCode: %s\nDescription: %s')%(codigo, codigos[codigo]))
             else:
                 msg += 'Not found information from web services of PAC, verify that the configuration of PAC is correct'
-                raise osv.except_osv(_('Warning'), _(
-                    'Not found information from web services of PAC, verify that the configuration of PAC is correct'))
+                #raise osv.except_osv(_('Warning'), _(
+                #    'Not found information from web services of PAC, verify that the configuration of PAC is correct'))
             return {'file': file, 'msg': msg, 'cfdi_xml': cfdi_xml}
 
         

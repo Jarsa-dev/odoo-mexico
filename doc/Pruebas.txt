@@ -11,3 +11,13 @@ req = urllib2.Request(url=url, data=cfdi, headers={'Content-Type': 'text/xml'})
 response = http.open(req)
 codigo = response.code
 respuesta = response.read()
+
+
+PRUEBAS:
+Timbrar:     http://pruebas.comercio-digital.mx/timbre/v2/timbrar.aspx
+Cancelacion: http://pruebas.comercio-digital.mx/cancela/uuid.aspx
+
+
+PRODUCCION
+Timbrar:     http://ws.comercio-digital.mx/timbre/v2/timbrar.aspx
+Cancelacion: https://ws.comercio-digital.mx/cancela/uuid.aspx
