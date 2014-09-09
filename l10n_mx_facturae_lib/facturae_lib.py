@@ -39,6 +39,9 @@ import logging
 _logger = logging.getLogger(__name__)
 from l10n_mx_facturae_lib import facturae_lib
 
+openssl_path = ''
+xsltproc_path = ''
+xmlstarlet_path = ''
 all_paths = tools.config["addons_path"].split(",")
 for my_path in all_paths:
     if os.path.isdir(os.path.join(my_path, 'l10n_mx_facturae', 'depends_app')):
