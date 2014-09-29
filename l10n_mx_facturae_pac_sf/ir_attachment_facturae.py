@@ -49,11 +49,12 @@ from pytz import timezone
 import pytz
 import time
 from openerp import tools
+import logging
+_logger = logging.getLogger(__name__)
 try:
     from SOAPpy import WSDL
 except:
-    print "Package SOAPpy missed"#TODO: Warning message
-    pass
+    _logger.warning('Install Package SOAPpy with the command "sudo apt-get install python-soappy".')
 
 class ir_attachment_facturae_mx(osv.Model):
     _inherit = 'ir.attachment.facturae.mx'
