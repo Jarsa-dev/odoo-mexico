@@ -1,7 +1,7 @@
-OpenERP localizacion para México
+Odoo localización para México
 ===========
 
-Este es tu proyecto para llevar a cabo adaptaciones para México:
+Este es tu proyecto para llevar a cabo módulos con adaptaciones para México de Odoo:
 
   * Facturación Electrónica CFDI
   * Estados de la república mexicana
