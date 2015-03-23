@@ -35,21 +35,15 @@
     and execute read_write_xml.py file for generate a xml compatible with OpenERP in the folder "data".
     When you install this module, OpenERP is going to import the cities from the xml file "data/l10n_mx_cities.xml"
     """,
-    "website" : "http://www.vauxoo.com/",
-    "license" : "AGPL-3",
-    "depends" : [
-        "base",
-        "city",
-        "l10n_mx_states",
-    ],
-    "init_xml" : [],
-    "demo_xml" : [],
-    "update_xml" : [
-        "data/l10n_mx_cities.xml",
-    ],
-    "installable" : True,
-    "active" : False,
+    "website": "http://www.vauxoo.com/",
+    "license": "AGPL-3",
+    "depends": ["base",
+                 "city",
+                 "l10n_mx_states",
+               ],
+    "init_xml": [],
+    "demo_xml": [],
+    "data": ["data/l10n_mx_cities.xml"],
+    "installable": True,
+    "active": False,
 }
-
-
-
