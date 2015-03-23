@@ -23,7 +23,7 @@
             <field name="name">res.country.state.city.form</field>
             <field name="model">res.country.state.city</field>
             <field name="arch" type="xml">
-                <form string="State" version="7.0">
+                <form string="State">
                     <group>
                         <field name="name"/>
                         <field name="code"/>

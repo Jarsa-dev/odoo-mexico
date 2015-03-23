@@ -7,6 +7,7 @@
 #    info Vauxoo (info@vauxoo.com)
 ############################################################################
 #    Coded by: moylop260 (moylop260@vauxoo.com)
+#              Julio Serna (julio@vauxoo.com)
 #              Isaac Lopez (isaac@vauxoo.com)
 ############################################################################
 #
@@ -25,28 +26,25 @@
 #
 ##############################################################################
 
-from openerp.osv import osv, fields
-from openerp import tools
-from openerp.tools.translate import _
-
-import math
-import re
-import logging
-from lxml import etree
-
-
-class res_country_state_city(osv.Model):
-    _description = "Country state city"
-    _name = 'res.country.state.city'
-    _columns = {
-        'name': fields.char('Name', size=64, required=True, select=True,
-                help='Administrative divisions of a state.'),
-        'state_id': fields.many2one('res.country.state', 'State',
-                    required=True),
-        'country_id': fields.related('state_id', 'country_id',
-                    type='many2one', relation='res.country',
-                    string='Country', store=True, readonly=True),
-        'code': fields.char('City Code', size=5,
-                            help='The city code in max. five chars.'),
-    }
-    _order = 'name'
+{
+    "name" : "City",
+    "version" : "1.0",
+    "author" : "Vauxoo",
+    "category" : "Localization/Mexico",
+    "description" : """This module creates the city model similar to states model and adds the field city_id on res partner.
+    """,
+    "website" : "http://www.vauxoo.com/",
+    "license" : "AGPL-3",
+    "depends" : [
+            "base",
+        ],
+    "demo" : [],
+    "data" : [
+        'views/res_city_view.xml',
+        'views/partner_address_view.xml',
+        'security/city_security.xml',
+        'security/ir.model.access.csv',
+    ],
+    "installable" : True,
+    "active" : False,
+}

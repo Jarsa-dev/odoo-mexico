@@ -3,12 +3,13 @@
 #    Module Writen to OpenERP, Open Source Management Solution
 #
 #    Copyright (c) 2013 Vauxoo - http://www.vauxoo.com/
+#                  2015 Jarsa - http://www.jarsa.com.mx/
 #    All Rights Reserved.
 #    info Vauxoo (info@vauxoo.com)
 ############################################################################
 #    Coded by: moylop260 (moylop260@vauxoo.com)
-#              Julio Serna (julio@vauxoo.com)
 #              Isaac Lopez (isaac@vauxoo.com)
+#              Alan Ramos (alan.ramos@jarsa.com.mx)
 ############################################################################
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -26,25 +27,21 @@
 #
 ##############################################################################
 
-{
-    "name" : "City",
-    "version" : "1.0",
-    "author" : "Vauxoo",
-    "category" : "Localization/Mexico",
-    "description" : """This module creates the city model similar to states model and adds the field city_id on res partner.
-    """,
-    "website" : "http://www.vauxoo.com/",
-    "license" : "AGPL-3",
-    "depends" : [
-            "base",
-        ],
-    "demo" : [],
-    "data" : [
-        'res_city_view.xml',
-        'partner_address_view.xml',
-        'security/city_security.xml',
-        'security/ir.model.access.csv',
-    ],
-    "installable" : True,
-    "active" : False,
-}
+from openerp import models, fields, api
+
+
+class res_country_state_city(models.Model):
+    _description = "Country state city"
+    _name = 'res.country.state.city'
+    name = fields.Char(size=64, required=True,
+                       help='Administrative divisions of a state.')
+    state_id = fields.Many2one('res.country.state', string='State',
+                               required=True)
+    country_id = fields.Many2one('res.country', string='Country', store=True, readonly=True)
+    code = fields.Char(string='City Code', size=5,
+                       help='The city code in max. five chars.')
+    _order = 'name'
+
+    @api.onchange('state_id')
+    def _onchange_country(self):
+        self.country_id = self.state_id.country_id.id

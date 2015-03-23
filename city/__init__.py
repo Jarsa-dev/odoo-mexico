@@ -26,5 +26,4 @@
 #
 ##############################################################################
 
-import res_city
-import partner_address
+from . import model
