@@ -50,10 +50,12 @@ import pytz
 import time
 from openerp import tools
 import urllib2
+import logging
+_logger = logging.getLogger(__name__)
 try:
     from qrtools import QR
 except:
-    pass
+    _logger.error('Execute "sudo apt-get install qrtools"')
 
 codigos = {
     200 : 'OK',
@@ -321,11 +323,12 @@ class ir_attachment_facturae_mx(osv.Model):
                                         
                 else:
                     msg += "\nOcurrio un error.\nCodigo: %s\nRespuesta: %s" % (codigo, codigos[codigo])
-                    #raise osv.except_osv(_('Warning'), _('There was something wrong processing CFDI file...\nCode: %s\nDescription: %s')%(codigo, codigos[codigo]))
+                    _logger.error(('Mensaje: %s') % (msg))
+                    raise osv.except_osv(_('Warning'), _('There was something wrong processing CFDI file...\nCode: %s\nDescription: %s')%(codigo, codigos[codigo]))
             else:
                 msg += 'Not found information from web services of PAC, verify that the configuration of PAC is correct'
-                #raise osv.except_osv(_('Warning'), _(
-                #    'Not found information from web services of PAC, verify that the configuration of PAC is correct'))
+                raise osv.except_osv(_('Warning'), _(
+                    'Not found information from web services of PAC, verify that the configuration of PAC is correct'))
             return {'file': file, 'msg': msg, 'cfdi_xml': cfdi_xml}
 
         

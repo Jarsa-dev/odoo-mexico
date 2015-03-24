@@ -50,3 +50,4 @@ class params_pac(osv.Model):
                                         "Process to perform", type='char', size=64, required=True,
                                         help='Type of process to configure in this pac'),
     }
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
