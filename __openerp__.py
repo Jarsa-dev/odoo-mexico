@@ -55,4 +55,5 @@ Ubuntu Package Depends:
     "test" : [],
     "installable" : True,
     "active" : False,
+    "sequence": 50,
 }
