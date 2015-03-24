@@ -361,4 +361,4 @@ class ir_attachment_facturae_mx(osv.Model):
 
 
         
-# vim:expandtab:smartinde
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

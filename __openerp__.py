@@ -34,6 +34,13 @@
     http://www.comercio-digital.mx
 Ubuntu Package Depends:
     sudo apt-get install python-soappy
+    
+Also you need to replace one line from:
+FILE: /directory of mexico's localization/l10n_mx_facturae/invoice.py
+LINE: 1205
+                    'descripcion': line.name or '',
+REPLACE WITH:
+                    'descripcion': line.name.replace('\n\r', ' ').replace('\r\n', ' ').replace('\n', ' ').replace('\r', ' ') or '',
 """,
     "website" : "http://www.hesatecnica.com/",
     "license" : "AGPL-3",
@@ -55,5 +62,5 @@ Ubuntu Package Depends:
     "test" : [],
     "installable" : True,
     "active" : False,
-    "sequence": 50,
+    #"sequence": 99,
 }
