@@ -1202,7 +1202,7 @@ class account_invoice(osv.Model):
                     line.quantity or 0.0
                 concepto = {
                     'cantidad': "%.2f" % (line.quantity or 0.0),
-                    'descripcion': line.name or '',
+                    'descripcion': line.name.replace('\r\n', ' ').replace('\n', ' ').replace('\r', ' ') or '',
                     'valorUnitario': "%.2f" % (price_unit or 0.0),
                     'importe': "%.2f" % (line.price_subtotal or 0.0),  # round(line.price_unit *(1-(line.discount/100)),2) or 0.00),#Calc: iva, disc, qty
                     # Falta agregar discount
