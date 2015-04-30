@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record model='res.bank' id='002'>
+        	<field name='name'>Banco Nacional de México, S.A., Institución de Banca Múltiple, Grupo Financiero Banamex</field>
+        	<field name='bic'>BANAMEX</field>
+        </record>
+        <record model='res.bank' id='006'>
+        	<field name='name'>Banco Nacional de Comercio Exterior, Sociedad Nacional de Crédito, Institución de Banca de Desarrollo</field>
+        	<field name='bic'>BANCOMEXT</field>
+        </record>
+        <record model='res.bank' id='009'>
+        	<field name='name'>Banco Nacional de Obras y Servicios Públicos, Sociedad Nacional de Crédito, Institución de Banca de Desarrollo</field>
+        	<field name='bic'>BANOBRAS</field>
+        </record>
+        <record model='res.bank' id='012'>
+        	<field name='name'>BBVA Bancomer, S.A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer</field>
+        	<field name='bic'>BBVA BANCOMER</field>
+        </record>
+        <record model='res.bank' id='014'>
+        	<field name='name'>Banco Santander (México), S.A., Institución de Banca Múltiple, Grupo Financiero Santander</field>
+        	<field name='bic'>SANTANDER</field>
+        </record>
+        <record model='res.bank' id='019'>
+        	<field name='name'>Banco Nacional del Ejército, Fuerza Aérea y Armada, Sociedad Nacional de Crédito, Institución de Banca de Desarrollo</field>
+        	<field name='bic'>BANJERCITO</field>
+        </record>
+        <record model='res.bank' id='021'>
+        	<field name='name'>HSBC México, S.A., institución De Banca Múltiple, Grupo Financiero HSBC</field>
+        	<field name='bic'>HSBC</field>
+        </record>
+        <record model='res.bank' id='030'>
+        	<field name='name'>Banco del Bajío, S.A., Institución de Banca Múltiple</field>
+        	<field name='bic'>BAJIO</field>
+        </record>
+        <record model='res.bank' id='032'>
+        	<field name='name'>IXE Banco, S.A., Institución de Banca Múltiple, IXE Grupo Financiero</field>
+        	<field name='bic'>IXE</field>
+        </record>
+        <record model='res.bank' id='036'>
+        	<field name='name'>Banco Inbursa, S.A., Institución de Banca Múltiple, Grupo Financiero Inbursa</field>
+        	<field name='bic'>INBURSA</field>
+        </record>
+        <record model='res.bank' id='037'>
+        	<field name='name'>Banco Interacciones, S.A., Institución de Banca Múltiple</field>
+        	<field name='bic'>INTERACCIONES</field>
+        </record>
+        <record model='res.bank' id='042'>
+        	<field name='name'>Banca Mifel, S.A., Institución de Banca Múltiple, Grupo Financiero Mifel</field>
+        	<field name='bic'>MIFEL</field>
+        </record>
+        <record model='res.bank' id='044'>
+        	<field name='name'>Scotiabank Inverlat, S.A.</field>
+        	<field name='bic'>SCOTIABANK</field>
+        </record>
+        <record model='res.bank' id='058'>
+        	<field name='name'>Banco Regional de Monterrey, S.A., Institución de Banca Múltiple, Banregio Grupo Financiero</field>
+        	<field name='bic'>BANREGIO</field>
+        </record>
+        <record model='res.bank' id='059'>
+        	<field name='name'>Banco Invex, S.A., Institución de Banca Múltiple, Invex Grupo Financiero</field>
+        	<field name='bic'>INVEX</field>
+        </record>
+        <record model='res.bank' id='060'>
+        	<field name='name'>Bansi, S.A., Institución de Banca Múltiple</field>
+        	<field name='bic'>BANSI</field>
+        </record>
+        <record model='res.bank' id='062'>
+        	<field name='name'>Banca Afirme, S.A., Institución de Banca Múltiple</field>
+        	<field name='bic'>AFIRME</field>
+        </record>
+        <record model='res.bank' id='072'>
+        	<field name='name'>Banco Mercantil del Norte, S.A., Institución de Banca Múltiple, Grupo Financiero Banorte</field>
+        	<field name='bic'>BANORTE</field>
+        </record>
+        <record model='res.bank' id='102'>
+        	<field name='name'>The Royal Bank of Scotland México, S.A., Institución de Banca Múltiple</field>
+        	<field name='bic'>THE ROYAL BANK</field>
+        </record>
+        <record model='res.bank' id='103'>
+        	<field name='name'>American Express Bank (México), S.A., Institución de Banca Múltiple</field>
+        	<field name='bic'>AMERICAN EXPRESS</field>
+        </record>
+        <record model='res.bank' id='106'>
+        	<field name='name'>Bank of America México, S.A., Institución de Banca Múltiple, Grupo Financiero Bank of America</field>
+        	<field name='bic'>BAMSA</field>
+        </record>
+        <record model='res.bank' id='108'>
+        	<field name='name'>Bank of Tokyo-Mitsubishi UFJ (México), S.A.</field>
+        	<field name='bic'>TOKYO</field>
+        </record>
+        <record model='res.bank' id='110'>
+        	<field name='name'>Banco J.P. Morgan, S.A., Institución de Banca Múltiple, J.P. Morgan Grupo Financiero</field>
+        	<field name='bic'>JP MORGAN</field>
+        </record>
+        <record model='res.bank' id='112'>
+        	<field name='name'>Banco Monex, S.A., Institución de Banca Múltiple</field>
+        	<field name='bic'>BMONEX</field>
+        </record>
+        <record model='res.bank' id='113'>
+        	<field name='name'>Banco Ve Por Mas, S.A. Institución de Banca Múltiple</field>
+        	<field name='bic'>VE POR MAS</field>
+        </record>
+        <record model='res.bank' id='116'>
+        	<field name='name'>ING Bank (México), S.A., Institución de Banca Múltiple, ING Grupo Financiero</field>
+        	<field name='bic'>ING</field>
+        </record>
+        <record model='res.bank' id='124'>
+        	<field name='name'>Deutsche Bank México, S.A., Institución de Banca Múltiple</field>
+        	<field name='bic'>DEUTSCHE</field>
+        </record>
+        <record model='res.bank' id='126'>
+        	<field name='name'>Banco Credit Suisse (México), S.A. Institución de Banca Múltiple, Grupo Financiero Credit Suisse (México)</field>
+        	<field name='bic'>CREDIT SUISSE</field>
+        </record>
+        <record model='res.bank' id='127'>
+        	<field name='name'>Banco Azteca, S.A. Institución de Banca Múltiple.</field>
+        	<field name='bic'>AZTECA</field>
+        </record>
+        <record model='res.bank' id='128'>
+        	<field name='name'>Banco Autofin México, S.A. Institución de Banca Múltiple</field>
+        	<field name='bic'>AUTOFIN</field>
+        </record>
+        <record model='res.bank' id='129'>
+        	<field name='name'>Barclays Bank México, S.A., Institución de Banca Múltiple, Grupo Financiero Barclays México</field>
+        	<field name='bic'>BARCLAYS</field>
+        </record>
+        <record model='res.bank' id='130'>
+        	<field name='name'>Banco Compartamos, S.A., Institución de Banca Múltiple</field>
+        	<field name='bic'>COMPARTAMOS</field>
+        </record>
+        <record model='res.bank' id='131'>
+        	<field name='name'>Banco Ahorro Famsa, S.A., Institución de Banca Múltiple</field>
+        	<field name='bic'>BANCO FAMSA</field>
+        </record>
+        <record model='res.bank' id='132'>
+        	<field name='name'>Banco Multiva, S.A., Institución de Banca Múltiple, Multivalores Grupo Financiero</field>
+        	<field name='bic'>BMULTIVA</field>
+        </record>
+        <record model='res.bank' id='133'>
+        	<field name='name'>Banco Actinver, S.A. Institución de Banca Múltiple, Grupo Financiero Actinver</field>
+        	<field name='bic'>ACTINVER</field>
+        </record>
+        <record model='res.bank' id='134'>
+        	<field name='name'>Banco Wal-Mart de México Adelante, S.A., Institución de Banca Múltiple</field>
+        	<field name='bic'>WAL-MART</field>
+        </record>
+        <record model='res.bank' id='135'>
+        	<field name='name'>Nacional Financiera, Sociedad Nacional de Crédito, Institución de Banca de Desarrollo</field>
+        	<field name='bic'>NAFIN</field>
+        </record>
+        <record model='res.bank' id='136'>
+        	<field name='name'>Inter Banco, S.A. Institución de Banca Múltiple</field>
+        	<field name='bic'>INTERBANCO</field>
+        </record>
+        <record model='res.bank' id='137'>
+        	<field name='name'>BanCoppel, S.A., Institución de Banca Múltiple</field>
+        	<field name='bic'>BANCOPPEL</field>
+        </record>
+        <record model='res.bank' id='138'>
+        	<field name='name'>ABC Capital, S.A., Institución de Banca Múltiple</field>
+        	<field name='bic'>ABC CAPITAL</field>
+        </record>
+        <record model='res.bank' id='139'>
+        	<field name='name'>UBS Bank México, S.A., Institución de Banca Múltiple, UBS Grupo Financiero</field>
+        	<field name='bic'>UBS BANK</field>
+        </record>
+        <record model='res.bank' id='140'>
+        	<field name='name'>Consubanco, S.A. Institución de Banca Múltiple</field>
+        	<field name='bic'>CONSUBANCO</field>
+        </record>
+        <record model='res.bank' id='141'>
+        	<field name='name'>Volkswagen Bank, S.A., Institución de Banca Múltiple</field>
+        	<field name='bic'>VOLKSWAGEN</field>
+        </record>
+        <record model='res.bank' id='143'>
+        	<field name='name'>CIBanco, S.A.</field>
+        	<field name='bic'>CIBANCO</field>
+        </record>
+        <record model='res.bank' id='145'>
+        	<field name='name'>Banco Base, S.A., Institución de Banca Múltiple</field>
+        	<field name='bic'>BBASE</field>
+        </record>
+        <record model='res.bank' id='166'>
+        	<field name='name'>Banco del Ahorro Nacional y Servicios Financieros, Sociedad Nacional de Crédito, Institución de Banca de Desarrollo</field>
+        	<field name='bic'>BANSEFI</field>
+        </record>
+        <record model='res.bank' id='168'>
+        	<field name='name'>Sociedad Hipotecaria Federal, Sociedad Nacional de Crédito, Institución de Banca de Desarrollo</field>
+        	<field name='bic'>HIPOTECARIA FEDERAL</field>
+        </record>
+        <record model='res.bank' id='600'>
+        	<field name='name'>Monex Casa de Bolsa, S.A. de C.V. Monex Grupo Financiero</field>
+        	<field name='bic'>MONEXCB</field>
+        </record>
+        <record model='res.bank' id='601'>
+        	<field name='name'>GBM Grupo Bursátil Mexicano, S.A. de C.V. Casa de Bolsa</field>
+        	<field name='bic'>GBM</field>
+        </record>
+        <record model='res.bank' id='602'>
+        	<field name='name'>Masari Casa de Bolsa, S.A.</field>
+        	<field name='bic'>MASARI</field>
+        </record>
+        <record model='res.bank' id='605'>
+        	<field name='name'>Value, S.A. de C.V. Casa de Bolsa</field>
+        	<field name='bic'>VALUE</field>
+        </record>
+        <record model='res.bank' id='606'>
+        	<field name='name'>Estructuradores del Mercado de Valores Casa de Bolsa, S.A. de C.V.</field>
+        	<field name='bic'>ESTRUCTURADORES</field>
+        </record>
+        <record model='res.bank' id='607'>
+        	<field name='name'>Casa de Cambio Tiber, S.A. de C.V.</field>
+        	<field name='bic'>TIBER</field>
+        </record>
+        <record model='res.bank' id='608'>
+        	<field name='name'>Vector Casa de Bolsa, S.A. de C.V.</field>
+        	<field name='bic'>VECTOR</field>
+        </record>
+        <record model='res.bank' id='610'>
+        	<field name='name'>B y B, Casa de Cambio, S.A. de C.V.</field>
+        	<field name='bic'>B&amp;B</field>
+        </record>
+        <record model='res.bank' id='614'>
+        	<field name='name'>Acciones y Valores Banamex, S.A. de C.V., Casa de Bolsa</field>
+        	<field name='bic'>ACCIVAL</field>
+        </record>
+        <record model='res.bank' id='615'>
+        	<field name='name'>Merrill Lynch México, S.A. de C.V. Casa de Bolsa</field>
+        	<field name='bic'>MERRILL LYNCH</field>
+        </record>
+        <record model='res.bank' id='616'>
+        	<field name='name'>Casa de Bolsa Finamex, S.A. de C.V.</field>
+        	<field name='bic'>FINAMEX</field>
+        </record>
+        <record model='res.bank' id='617'>
+        	<field name='name'>Valores Mexicanos Casa de Bolsa, S.A. de C.V.</field>
+        	<field name='bic'>VALMEX</field>
+        </record>
+        <record model='res.bank' id='618'>
+        	<field name='name'>Unica Casa de Cambio, S.A. de C.V.</field>
+        	<field name='bic'>UNICA</field>
+        </record>
+        <record model='res.bank' id='619'>
+        	<field name='name'>MAPFRE Tepeyac, S.A.</field>
+        	<field name='bic'>MAPFRE</field>
+        </record>
+        <record model='res.bank' id='620'>
+        	<field name='name'>Profuturo G.N.P., S.A. de C.V., Afore</field>
+        	<field name='bic'>PROFUTURO</field>
+        </record>
+        <record model='res.bank' id='621'>
+        	<field name='name'>Actinver Casa de Bolsa, S.A. de C.V.</field>
+        	<field name='bic'>CB ACTINVER</field>
+        </record>
+        <record model='res.bank' id='622'>
+        	<field name='name'>OPERADORA ACTINVER, S.A. DE C.V.</field>
+        	<field name='bic'>OACTIN</field>
+        </record>
+        <record model='res.bank' id='623'>
+        	<field name='name'>Skandia Vida, S.A. de C.V.</field>
+        	<field name='bic'>SKANDIA</field>
+        </record>
+        <record model='res.bank' id='626'>
+        	<field name='name'>Deutsche Securities, S.A. de C.V. CASA DE BOLSA</field>
+        	<field name='bic'>CBDEUTSCHE</field>
+        </record>
+        <record model='res.bank' id='627'>
+        	<field name='name'>Zurich Compañía de Seguros, S.A.</field>
+        	<field name='bic'>ZURICH</field>
+        </record>
+        <record model='res.bank' id='628'>
+        	<field name='name'>Zurich Vida, Compañía de Seguros, S.A.</field>
+        	<field name='bic'>ZURICHVI</field>
+        </record>
+        <record model='res.bank' id='629'>
+        	<field name='name'>Hipotecaria Su Casita, S.A. de C.V. SOFOM ENR</field>
+        	<field name='bic'>SU CASITA</field>
+        </record>
+        <record model='res.bank' id='630'>
+        	<field name='name'>Intercam Casa de Bolsa, S.A. de C.V.</field>
+        	<field name='bic'>CB INTERCAM</field>
+        </record>
+        <record model='res.bank' id='631'>
+        	<field name='name'>CI Casa de Bolsa, S.A. de C.V.</field>
+        	<field name='bic'>CI BOLSA</field>
+        </record>
+        <record model='res.bank' id='632'>
+        	<field name='name'>Bulltick Casa de Bolsa, S.A., de C.V.</field>
+        	<field name='bic'>BULLTICK CB</field>
+        </record>
+        <record model='res.bank' id='633'>
+        	<field name='name'>Sterling Casa de Cambio, S.A. de C.V.</field>
+        	<field name='bic'>STERLING</field>
+        </record>
+        <record model='res.bank' id='634'>
+        	<field name='name'>Fincomún, Servicios Financieros Comunitarios, S.A. de C.V.</field>
+        	<field name='bic'>FINCOMUN</field>
+        </record>
+        <record model='res.bank' id='636'>
+        	<field name='name'>HDI Seguros, S.A. de C.V.</field>
+        	<field name='bic'>HDI SEGUROS</field>
+        </record>
+        <record model='res.bank' id='637'>
+        	<field name='name'>Order Express Casa de Cambio, S.A. de C.V</field>
+        	<field name='bic'>ORDER</field>
+        </record>
+        <record model='res.bank' id='638'>
+        	<field name='name'>Akala, S.A. de C.V., Sociedad Financiera Popular</field>
+        	<field name='bic'>AKALA</field>
+        </record>
+        <record model='res.bank' id='640'>
+        	<field name='name'>J.P. Morgan Casa de Bolsa, S.A. de C.V. J.P. Morgan Grupo Financiero</field>
+        	<field name='bic'>CB JPMORGAN</field>
+        </record>
+        <record model='res.bank' id='642'>
+        	<field name='name'>Operadora de Recursos Reforma, S.A. de C.V., S.F.P.</field>
+        	<field name='bic'>REFORMA</field>
+        </record>
+        <record model='res.bank' id='646'>
+        	<field name='name'>Sistema de Transferencias y Pagos STP, S.A. de C.V.SOFOM ENR</field>
+        	<field name='bic'>STP</field>
+        </record>
+        <record model='res.bank' id='647'>
+        	<field name='name'>Telecomunicaciones de México</field>
+        	<field name='bic'>TELECOMM</field>
+        </record>
+        <record model='res.bank' id='648'>
+        	<field name='name'>Evercore Casa de Bolsa, S.A. de C.V.</field>
+        	<field name='bic'>EVERCORE</field>
+        </record>
+        <record model='res.bank' id='649'>
+        	<field name='name'>Skandia Operadora de Fondos, S.A. de C.V.</field>
+        	<field name='bic'>SKANDIA</field>
+        </record>
+        <record model='res.bank' id='651'>
+        	<field name='name'>Seguros Monterrey New York Life, S.A de C.V</field>
+        	<field name='bic'>SEGMTY</field>
+        </record>
+        <record model='res.bank' id='652'>
+        	<field name='name'>Solución Asea, S.A. de C.V., Sociedad Financiera Popular</field>
+        	<field name='bic'>ASEA</field>
+        </record>
+        <record model='res.bank' id='653'>
+        	<field name='name'>Kuspit Casa de Bolsa, S.A. de C.V.</field>
+        	<field name='bic'>KUSPIT</field>
+        </record>
+        <record model='res.bank' id='655'>
+        	<field name='name'>J.P. SOFIEXPRESS, S.A. de C.V., S.F.P.</field>
+        	<field name='bic'>SOFIEXPRESS</field>
+        </record>
+        <record model='res.bank' id='656'>
+        	<field name='name'>UNAGRA, S.A. de C.V., S.F.P.</field>
+        	<field name='bic'>UNAGRA</field>
+        </record>
+        <record model='res.bank' id='659'>
+        	<field name='name'>OPCIONES EMPRESARIALES DEL NORESTE, S.A. DE C.V., S.F.P.</field>
+        	<field name='bic'>OPCIONES EMPRESARIALES DEL NOROESTE</field>
+        </record>
+        <record model='res.bank' id='901'>
+        	<field name='name'>Cls Bank International</field>
+        	<field name='bic'>CLS</field>
+        </record>
+        <record model='res.bank' id='902'>
+        	<field name='name'>SD. Indeval, S.A. de C.V.</field>
+        	<field name='bic'>INDEVAL</field>
+        </record>
+        <record model='res.bank' id='670'>
+        	<field name='name'>Libertad Servicios Financieros, S.A. De C.V.</field>
+        	<field name='bic'>LIBERTAD</field>
+        </record>
+    </data>
+</openerp>
