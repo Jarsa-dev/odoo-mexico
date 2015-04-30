@@ -26,5 +26,29 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
+from openerp import fields, models, api
 
-import res_bank
+
+class res_partner_bank(models.Model):
+    _inherit = 'res.partner.bank'
+
+    @api.one
+    @api.depends('acc_number')
+    def _get_last_digits(self):
+        if self.acc_number == False:
+            self.last_acc_number = ' '
+        else:
+            self.last_acc_number = str(self.acc_number)[-4:]
+
+    clabe = fields.Char(string='Clabe Interbancaria',
+                        size=64,
+                        required=False)
+    last_acc_number = fields.Char(compute='_get_last_digits',
+                                  string='Last 4 digits',
+                                  store=True,
+                                  size=4,)
+    currency2_id = fields.Many2one('res.currency',
+                                   string='Currency',)
+    reference = fields.Char(string='Reference',
+                            size=64,
+                            help='Reference used in this bank')

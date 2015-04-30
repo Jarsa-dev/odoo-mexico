@@ -26,19 +26,5 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-{
-    "name" : "Agregado de Moneda, Clabe Interbancaria y los Ultimos Cuatro Dígitos de la Cuenta a res.partner.bank",
-    "version" : "1.0",
-    "author" : "Vauxoo",
-    "category" : "Localization/Mexico",
-    "description" : """This module add currency, field clabe interbancaria & the last 4 digits of the account to model res.partner.bank
-    """,
-    "website" : "www.vauxoo.com",
-    "license" : "AGPL-3",
-    "depends" : ["account"],
-    "init_xml" : [],
-    "demo_xml" : [],
-    "update_xml" : ["res_bank_view.xml",],
-    "installable" : True,
-    "active" : False,
-}
+
+from . import models

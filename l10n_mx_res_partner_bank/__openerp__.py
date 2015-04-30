@@ -26,29 +26,19 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-from openerp.osv import fields, osv
-
-
-class res_partner_bank(osv.Model):
-    _inherit = 'res.partner.bank'
-
-    def _get_take_digits(self, cr, uid, ids, field, args, context=None):
-        if context is None:
-            context = {}
-        result = {}
-        res = ''
-        n = -1
-        for last in self.browse(cr, uid, ids, context=context):
-            for digit in last.acc_number[::-1]:
-                if(digit.isdigit() == True) and len(res) < 4:
-                    res = digit+res
-            result[last.id] = res
-        return result
-
-    _columns = {
-        'clabe': fields.char('Clabe Interbancaria', size=64, required=False),
-        'last_acc_number': fields.function(_get_take_digits, method=True,
-            type='char', string="Ultimos 4 digitos", size=4, store=True),
-        'currency2_id': fields.many2one('res.currency', 'Currency',),
-        'reference' :fields.char('Reference', size=64, help='Reference used in this bank'),
-    }
+{
+    "name" : "Agregado de Moneda, Clabe Interbancaria y los Ultimos Cuatro Dígitos de la Cuenta a res.partner.bank",
+    "version" : "1.0",
+    "author" : "Vauxoo",
+    "category" : "Localization/Mexico",
+    "description" : """This module add currency, field clabe interbancaria & the last 4 digits of the account to model res.partner.bank
+    """,
+    "website" : "www.vauxoo.com",
+    "license" : "AGPL-3",
+    "depends" : ["account"],
+    "init_xml" : [],
+    "demo_xml" : [],
+    "update_xml" : ["views/res_bank_view.xml",],
+    "installable" : True,
+    "active" : False,
+}
