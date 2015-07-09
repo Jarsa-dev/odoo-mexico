@@ -239,7 +239,7 @@ class ir_attachment_facturae_mx(osv.Model):
             cfd_data = base64.decodestring(fdata or invoice_obj.fdata)
             xml_res_str = xml.dom.minidom.parseString(cfd_data)
             xml_res_addenda = xml_res_str
-            
+            #xml_res_str_addenda = xml_res_str
             if tools.config['test_report_directory']:#TODO: Add if test-enabled:
                 ir_attach_facturae_mx_file_input = ir_attachment_facturae_mx_id.file_input and ir_attachment_facturae_mx_id.file_input or False
                 fname_suffix = ir_attach_facturae_mx_file_input and ir_attach_facturae_mx_file_input.datas_fname or ''
@@ -300,7 +300,11 @@ class ir_attachment_facturae_mx(osv.Model):
                         'cfdi_cbb'              : qr_bytes,  # a lo regresa en base64
                         'cfdi_sello'            : timbre.attributes['selloSAT'].value or False,
                         'cfdi_no_certificado'   : timbre.attributes['noCertificadoSAT'].value or False,
-                        #'cfdi_cadena_original'  : False,
+                        'cfdi_cadena_original'  : '||'+ (timbre.attributes['version'].value or '') + '|' + \
+                                                        (timbre.attributes['UUID'].value or '') + '|' + \
+                                                        (timbre.attributes['FechaTimbrado'].value or '') + '|' + \
+                                                        (timbre.attributes['selloCFD'].value or '') + '|' + \
+                                                        (timbre.attributes['noCertificadoSAT'].value or '') + '||',
                         'cfdi_fecha_timbrado'   : fecha_timbrado,
                         'cfdi_xml'              : cfd_data.replace(original, replacement) or '',  # este se necesita en uno que no es base64
                         'cfdi_folio_fiscal'     : timbre.attributes['UUID'].value or '',

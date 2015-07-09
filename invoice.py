@@ -119,6 +119,7 @@ class account_invoice(osv.Model):
             'cfdi_fecha_timbrado': False,
             'cfdi_folio_fiscal': False,
             'cfdi_fecha_cancelacion': False,
+            'cfdi_folio_fiscal_cancel':False,
         })
         return super(account_invoice, self).copy(cr, uid, id, default, context)
     """
