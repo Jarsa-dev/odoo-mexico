@@ -1,0 +1,8 @@
+*.pyv
+__init__.pyc
+invoice.pyc
+ir_attachment_facturae.pyc
+ir_sequence_approval.pyc
+params_pac.pyc
+qrtools.pyc
+ir_attachment_facturae.py~
