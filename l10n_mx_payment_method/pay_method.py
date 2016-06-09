@@ -26,10 +26,6 @@
 ##############################################################################
 
 from openerp.osv import fields, osv
-from openerp.tools.translate import _
-from openerp import pooler, tools
-
-import time
 
 
 class pay_method(osv.Model):
@@ -37,4 +33,17 @@ class pay_method(osv.Model):
     _columns = {
         'name': fields.char('Payment Method', size=128),
         'description': fields.text('Description'),
+        'code': fields.char('Clave SAT', size=2, required=True),
+        'active': fields.boolean('Active')
     }
+
+    _defaults = {
+        'active': True
+    }
+
+    _sql_constraints = [
+        ('name_uniq', 'unique(name)',
+         'El nombre del Método de Pago debe ser único !'),
+        ('code_uniq', 'unique(code)',
+         'La clave del Método de Pago debe ser único !')
+        ]

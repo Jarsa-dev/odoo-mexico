@@ -1,39 +1,65 @@
 <?xml version="1.0" ?>
 <openerp>
-    <data noupdate="1">
+    <data noupdate="0">
         <record id="pay_method_efectivo" model="pay.method">
+            <field name="code">01</field>
             <field name="name">Efectivo</field>
             <field name="description">Efectivo</field>
+            <field name="active" eval="True"/>
         </record>
-    </data>
-    <data>
-        <record id="pay_method_transferencia_electronica" model="pay.method">
-            <field name="name">Transferencia Electrónica</field>
-            <field name="description">Transferencia Electrónica</field>
-        </record>
-     </data>
-     <data>
         <record id="pay_method_cheque" model="pay.method">
-            <field name="name">Cheque</field>
-            <field name="description">Cheque</field>
+            <field name="code">02</field>
+            <field name="name">Cheque nominativo</field>
+            <field name="description">Cheque nominativo</field>
+            <field name="active" eval="True"/>
         </record>
-     </data>
-     <data>
-        <record id="pay_method_tarjeta_de_debito" model="pay.method">
-            <field name="name">Tarjeta de débito</field>
-            <field name="description">Tarjeta de débito</field>
+        <record id="pay_method_transferencia_electronica" model="pay.method">
+            <field name="code">03</field>
+            <field name="name">Transferencia electronica de fondos</field>
+            <field name="description">Transferencia electronica de fondos</field>
+            <field name="active" eval="True"/>
         </record>
-     </data>
-     <data>
         <record id="pay_method_tarjeta_de_credito" model="pay.method">
+            <field name="code">04</field>
             <field name="name">Tarjeta de crédito</field>
             <field name="description">Tarjeta de crédito</field>
+            <field name="active" eval="True"/>
         </record>
-     </data>
-      <data>
         <record id="pay_method_monedero_electronico" model="pay.method">
+            <field name="code">05</field>
             <field name="name">Monedero electrónico</field>
             <field name="description">Monedero electrónico </field>
+            <field name="active" eval="True"/>
+        </record>
+        <record id="pay_method_dinero_electronico" model="pay.method">
+            <field name="code">06</field>
+            <field name="name">Dinero Electrónico</field>
+            <field name="description">Dinero Electrónico</field>
+            <field name="active" eval="True"/>
+        </record>
+        <record id="pay_method_vales_despensa" model="pay.method">
+            <field name="code">08</field>
+            <field name="name">Vales de despensa</field>
+            <field name="description">Vales de despensa</field>
+            <field name="active" eval="True"/>
+        </record>
+        <record id="pay_method_debito" model="pay.method">
+            <field name="code">28</field>
+            <field name="name">Tarjeta de Débito</field>
+            <field name="description">Tarjeta de Débito</field>
+            <field name="active" eval="True"/>
+        </record>
+        <record id="pay_method_tarjeta_servicio" model="pay.method">
+            <field name="code">29</field>
+            <field name="name">Tarjeta de Servicio</field>
+            <field name="description">Tarjeta de Servicio</field>
+            <field name="active" eval="True"/>
+        </record>
+        <record id="pay_method_otros" model="pay.method">
+            <field name="code">99</field>
+            <field name="name">Otros</field>
+            <field name="description">Otros</field>
+            <field name="active" eval="True"/>
         </record>
      </data>
 </openerp>
