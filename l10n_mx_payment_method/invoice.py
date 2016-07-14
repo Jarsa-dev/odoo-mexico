@@ -61,15 +61,18 @@ class account_invoice(osv.Model):
         return res
 
     _columns = {
-        'pay_method_id': fields.many2one('pay.method', 'Payment Method',
+        'pay_method_id': fields.many2one(
+            'pay.method', 'Payment Method', required=True,
             readonly=True, states={'draft': [('readonly', False)]},
-                help='Indicates the way it was paid or will be paid the invoice,\
-                where the options could be: check, bank transfer, reservoir in \
-                account bank, credit card, cash etc. If not know as will be \
-                paid the invoice, leave empty and the XML show “Unidentified”.'),
-        'acc_payment': fields.many2one('res.partner.bank', 'Account Number',
+            help=('Indicates the way it was paid or will be paid the '
+                  'invoice, where the options could be: check, bank '
+                  'transfer, reservoir in account bank, credit card, cash'
+                  ' etc. If not know as will be paid the invoice, leave '
+                  'empty and the XML show “Unidentified”.')),
+        'acc_payment': fields.many2one(
+            'res.partner.bank', 'Account Number',
             readonly=True, states={'draft': [('readonly', False)]},
-                help='Is the account with which the client pays the invoice, \
-                if not know which account will used for pay leave empty and \
-                the XML will show "“Unidentified”".'),
+            help=('Is the account with which the client pays the invoice, if '
+                  'not know which account will used for pay leave empty and '
+                  'the XML will show "“Unidentified”".')),
     }
