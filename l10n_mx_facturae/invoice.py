@@ -977,10 +977,10 @@ class account_invoice(osv.Model):
             else:
                 raise osv.except_osv(_('Warning !'), _(
                     'Only can issue electronic invoice to customers.!'))
-            if len(invoice.payment_term.line_ids) > 1:
-                formaDePago = u'Pago en parcialidades'
-            else:
-                formaDePago = u'Pago en una sola exhibición'
+            formaDePago = u'Pago en una sola exhibición'
+            if invoice.payment_term:
+                if len(invoice.payment_term.line_ids) > 1:
+                    formaDePago = u'Pago en parcialidades'
             # Inicia seccion: Comprobante
             invoice_data_parent['Comprobante'] = {}
             # default data
