@@ -239,11 +239,19 @@
                     <i>${o.amount_to_text or ''|entity}</i>
                 </td>
             </tr>
+            %if len(o.payment_term.line_ids) > 1:
+            <tr>
+                <td class="center_td">
+                    ${_('PAGO EN PARCIALIDADES - EFECTOS FISCALES AL PAGO')}
+                </td>
+            </tr>
+            %else:
             <tr>
                 <td class="center_td">
                     ${_('PAGO EN UNA SOLA EXHIBICI&Oacute;N - EFECTOS FISCALES AL PAGO')}
                 </td>
             </tr>
+            %endif
             
         </table>
         <br/>${o.comment or '' |entity}<br/>
